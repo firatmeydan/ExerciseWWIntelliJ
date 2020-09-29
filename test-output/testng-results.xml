@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="19365" started-at="2020-09-29T01:29:56 EDT" finished-at="2020-09-29T01:30:15 EDT">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="19365" started-at="2020-09-29T01:29:56 EDT" finished-at="2020-09-29T01:30:15 EDT">
+      <class name="tests.AllTestCasesTogether">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.AllTestCasesTogether@1fe20588]" name="setUp" is-config="true" duration-ms="5927" started-at="2020-09-29T01:29:56 EDT" finished-at="2020-09-29T01:30:02 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="homePage1()[pri:1, instance:tests.AllTestCasesTogether@1fe20588]" name="homePage1" duration-ms="4034" started-at="2020-09-29T01:30:02 EDT" description="Verify homepage title and click on &#039;Find a Workshop&#039;" finished-at="2020-09-29T01:30:06 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePage1 -->
+        <test-method status="PASS" signature="workshopPage1()[pri:2, instance:tests.AllTestCasesTogether@1fe20588]" name="workshopPage1" duration-ms="2249" started-at="2020-09-29T01:30:06 EDT" description="Verify title of second page" finished-at="2020-09-29T01:30:09 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- workshopPage1 -->
+        <test-method status="PASS" signature="workshopPage2()[pri:3, instance:tests.AllTestCasesTogether@1fe20588]" name="workshopPage2" duration-ms="3538" started-at="2020-09-29T01:30:09 EDT" description="enter the zipcode, submit it, print the first result 
+	and click on the first result" finished-at="2020-09-29T01:30:12 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- workshopPage2 -->
+        <test-method status="PASS" signature="workshop3()[pri:4, instance:tests.AllTestCasesTogether@1fe20588]" name="workshop3" duration-ms="2490" started-at="2020-09-29T01:30:12 EDT" description="Verify the title of the first searched result" finished-at="2020-09-29T01:30:15 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- workshop3 -->
+        <test-method status="PASS" signature="location1()[pri:5, instance:tests.AllTestCasesTogether@1fe20588]" name="location1" duration-ms="269" started-at="2020-09-29T01:30:15 EDT" description="Printing today&#039;s hours of operation" finished-at="2020-09-29T01:30:15 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- location1 -->
+        <test-method status="PASS" signature="location2()[pri:6, instance:tests.AllTestCasesTogether@1fe20588]" name="location2" duration-ms="206" started-at="2020-09-29T01:30:15 EDT" description="Printing names and number of meeting each person has" finished-at="2020-09-29T01:30:15 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- location2 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.AllTestCasesTogether@1fe20588]" name="tearDown" is-config="true" duration-ms="308" started-at="2020-09-29T01:30:15 EDT" finished-at="2020-09-29T01:30:15 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.AllTestCasesTogether -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
