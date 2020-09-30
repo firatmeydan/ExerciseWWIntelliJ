@@ -1,9 +1,9 @@
 package pages;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Properties;
+import java.time.DayOfWeek;
+import java.time.LocalDate;
+import java.time.format.TextStyle;
+import java.util.*;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -17,7 +17,10 @@ public class LocationPage extends WorkshopPage {
 	Properties prop;
 
 	By firstResult = By.xpath("(//*[@class='linkUnderline-1_h4g'])[1]");
-	By hours = By.xpath("((//*[@class='day-NhBOb'])[2]//*[@class='meetingTime-1g52A'])");
+	DayOfWeek date= LocalDate.now().getDayOfWeek();
+	String today=(date.getDisplayName(TextStyle.SHORT, Locale.ENGLISH)).toUpperCase();
+	String xpath="(//*[contains(text(), '" + today + "')]/parent::div)//*[@class='meetingTime-1g52A']";
+	By hours = By.xpath(xpath);
 	By namesOfPeople = By.xpath("((//*[@class='day-NhBOb'])[2]//span[2])");
 
 	public LocationPage(WebDriver driver, ElementUtils elementUtils, Properties prop) {
@@ -32,7 +35,7 @@ public class LocationPage extends WorkshopPage {
 		try {
 			List<WebElement> list = driver.findElements(hours);
 
-			System.out.println("Today's (Monday) Hours of Operations\n-------------------------------------");
+			System.out.println("Today's (" + today + ") Hours of Operations\n-------------------------------------");
 
 			for (WebElement webElement : list) {
 				System.out.println(webElement.getText());
@@ -67,7 +70,7 @@ public class LocationPage extends WorkshopPage {
 			}
 
 			System.out.println(
-					"\nName of each person and the number of his/her meeting\n-------------------------------");
+					"\nName of each person and the number of his/her meeting on MON\n-------------------------------");
 			for (int i = 0; i < n; i++) {
 				
 				if (map.get(names[i]) != -1) {
